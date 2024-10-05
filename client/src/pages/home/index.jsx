@@ -7,7 +7,7 @@ export default function Home() {
         setBlogList,
         pending,
         setPending } = useContext(GlobalContext)
-    setPending(true)
+    setPending(true);
     async function fetchListOfBlogs() {
         const res = await axios.get('http://localhost:5000/api/blogs')
         const result = res.data;
